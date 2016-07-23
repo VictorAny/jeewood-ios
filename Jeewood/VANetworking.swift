@@ -11,21 +11,6 @@ import UIKit
 
 class VANetworking {
     
-    var blob_URL : String?
-    
-    init(){
-        self.blob_URL = nil
-    }
-    
-    func parseResponseForBlobViewURL(parsedResponse parsedResult: NSDictionary) -> String
-    {
-        let blobURL = parsedResult["blob_view_url"] as! String
-        let decodedBlobURL = blobURL.stringByRemovingPercentEncoding
-        let blobfullUrl = URLConstants.JeeWoodBaseUrl + decodedBlobURL!
-        return blobfullUrl
-    }
-    
-    
     /**
     Base request function for communicating with sever via HTTP. Only for simple, non-media related transmission
     

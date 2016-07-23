@@ -14,6 +14,9 @@
 		2441DCAE1D44033200565081 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2441DCAC1D44033200565081 /* LaunchScreen.storyboard */; };
 		2441DCB61D4404E500565081 /* VANetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2441DCB51D4404E500565081 /* VANetworking.swift */; };
 		2441DCB81D44059600565081 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2441DCB71D44059600565081 /* AppConstants.swift */; };
+		2441DCBA1D4419B200565081 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2441DCB91D4419B200565081 /* User.swift */; };
+		2441DCBC1D441B2A00565081 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2441DCBB1D441B2A00565081 /* Item.swift */; };
+		2441DCBE1D441C8E00565081 /* Seller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2441DCBD1D441C8E00565081 /* Seller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		2441DCAF1D44033200565081 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2441DCB51D4404E500565081 /* VANetworking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VANetworking.swift; sourceTree = "<group>"; };
 		2441DCB71D44059600565081 /* AppConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		2441DCB91D4419B200565081 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		2441DCBB1D441B2A00565081 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		2441DCBD1D441C8E00565081 /* Seller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Seller.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +64,27 @@
 		2441DCA21D44033200565081 /* Jeewood */ = {
 			isa = PBXGroup;
 			children = (
+				2441DCBF1D44218C00565081 /* Model */,
 				2441DCA31D44033200565081 /* AppDelegate.swift */,
 				2441DCA51D44033200565081 /* ViewController.swift */,
-				2441DCB51D4404E500565081 /* VANetworking.swift */,
-				2441DCB71D44059600565081 /* AppConstants.swift */,
 				2441DCA71D44033200565081 /* Main.storyboard */,
 				2441DCAA1D44033200565081 /* Assets.xcassets */,
 				2441DCAC1D44033200565081 /* LaunchScreen.storyboard */,
 				2441DCAF1D44033200565081 /* Info.plist */,
 			);
 			path = Jeewood;
+			sourceTree = "<group>";
+		};
+		2441DCBF1D44218C00565081 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2441DCB71D44059600565081 /* AppConstants.swift */,
+				2441DCB51D4404E500565081 /* VANetworking.swift */,
+				2441DCBB1D441B2A00565081 /* Item.swift */,
+				2441DCBD1D441C8E00565081 /* Seller.swift */,
+				2441DCB91D4419B200565081 /* User.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,8 +159,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2441DCB61D4404E500565081 /* VANetworking.swift in Sources */,
+				2441DCBE1D441C8E00565081 /* Seller.swift in Sources */,
 				2441DCA61D44033200565081 /* ViewController.swift in Sources */,
 				2441DCA41D44033200565081 /* AppDelegate.swift in Sources */,
+				2441DCBA1D4419B200565081 /* User.swift in Sources */,
+				2441DCBC1D441B2A00565081 /* Item.swift in Sources */,
 				2441DCB81D44059600565081 /* AppConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
