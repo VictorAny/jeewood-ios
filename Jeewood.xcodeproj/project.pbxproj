@@ -12,6 +12,8 @@
 		2441DCA91D44033200565081 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2441DCA71D44033200565081 /* Main.storyboard */; };
 		2441DCAB1D44033200565081 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2441DCAA1D44033200565081 /* Assets.xcassets */; };
 		2441DCAE1D44033200565081 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2441DCAC1D44033200565081 /* LaunchScreen.storyboard */; };
+		2441DCB61D4404E500565081 /* VANetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2441DCB51D4404E500565081 /* VANetworking.swift */; };
+		2441DCB81D44059600565081 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2441DCB71D44059600565081 /* AppConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		2441DCAA1D44033200565081 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2441DCAD1D44033200565081 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2441DCAF1D44033200565081 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2441DCB51D4404E500565081 /* VANetworking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VANetworking.swift; sourceTree = "<group>"; };
+		2441DCB71D44059600565081 /* AppConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 			children = (
 				2441DCA31D44033200565081 /* AppDelegate.swift */,
 				2441DCA51D44033200565081 /* ViewController.swift */,
+				2441DCB51D4404E500565081 /* VANetworking.swift */,
+				2441DCB71D44059600565081 /* AppConstants.swift */,
 				2441DCA71D44033200565081 /* Main.storyboard */,
 				2441DCAA1D44033200565081 /* Assets.xcassets */,
 				2441DCAC1D44033200565081 /* LaunchScreen.storyboard */,
@@ -135,8 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2441DCB61D4404E500565081 /* VANetworking.swift in Sources */,
 				2441DCA61D44033200565081 /* ViewController.swift in Sources */,
 				2441DCA41D44033200565081 /* AppDelegate.swift in Sources */,
+				2441DCB81D44059600565081 /* AppConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
