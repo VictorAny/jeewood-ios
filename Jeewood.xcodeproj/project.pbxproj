@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2441DCA41D44033200565081 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2441DCA31D44033200565081 /* AppDelegate.swift */; };
-		2441DCA61D44033200565081 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2441DCA51D44033200565081 /* ViewController.swift */; };
 		2441DCA91D44033200565081 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2441DCA71D44033200565081 /* Main.storyboard */; };
 		2441DCAB1D44033200565081 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2441DCAA1D44033200565081 /* Assets.xcassets */; };
 		2441DCAE1D44033200565081 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2441DCAC1D44033200565081 /* LaunchScreen.storyboard */; };
@@ -17,12 +16,12 @@
 		2441DCBA1D4419B200565081 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2441DCB91D4419B200565081 /* User.swift */; };
 		2441DCBC1D441B2A00565081 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2441DCBB1D441B2A00565081 /* Item.swift */; };
 		2441DCBE1D441C8E00565081 /* Seller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2441DCBD1D441C8E00565081 /* Seller.swift */; };
+		A7CA22F91D44257F00AA219A /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CA22F81D44257F00AA219A /* ExploreViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2441DCA01D44033200565081 /* Jeewood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jeewood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2441DCA31D44033200565081 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2441DCA51D44033200565081 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2441DCA81D44033200565081 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2441DCAA1D44033200565081 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2441DCAD1D44033200565081 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -32,6 +31,7 @@
 		2441DCB91D4419B200565081 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		2441DCBB1D441B2A00565081 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		2441DCBD1D441C8E00565081 /* Seller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Seller.swift; sourceTree = "<group>"; };
+		A7CA22F81D44257F00AA219A /* ExploreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +66,7 @@
 			children = (
 				2441DCBF1D44218C00565081 /* Model */,
 				2441DCA31D44033200565081 /* AppDelegate.swift */,
-				2441DCA51D44033200565081 /* ViewController.swift */,
+				A7CA22F81D44257F00AA219A /* ExploreViewController.swift */,
 				2441DCA71D44033200565081 /* Main.storyboard */,
 				2441DCAA1D44033200565081 /* Assets.xcassets */,
 				2441DCAC1D44033200565081 /* LaunchScreen.storyboard */,
@@ -160,10 +160,10 @@
 			files = (
 				2441DCB61D4404E500565081 /* VANetworking.swift in Sources */,
 				2441DCBE1D441C8E00565081 /* Seller.swift in Sources */,
-				2441DCA61D44033200565081 /* ViewController.swift in Sources */,
 				2441DCA41D44033200565081 /* AppDelegate.swift in Sources */,
 				2441DCBA1D4419B200565081 /* User.swift in Sources */,
 				2441DCBC1D441B2A00565081 /* Item.swift in Sources */,
+				A7CA22F91D44257F00AA219A /* ExploreViewController.swift in Sources */,
 				2441DCB81D44059600565081 /* AppConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -314,6 +314,7 @@
 				2441DCB41D44033200565081 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
