@@ -9,7 +9,11 @@
 import UIKit
 
 class ItemTableViewCell: UITableViewCell {
-
+    @IBOutlet weak var itemImage : UIImageView!
+    @IBOutlet weak var itemName : UILabel!
+    @IBOutlet weak var itemCost : UILabel!
+    @IBOutlet weak var itemTag : UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -19,6 +23,13 @@ class ItemTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    func fillCellWithItem(item : Item){
+        self.itemImage.backgroundColor = UIColor.blackColor()
+        self.itemName.text = item.name
+        self.itemCost.text = "\(item.price)"
+        self.itemName.text = item.tag
     }
     
 }

@@ -13,18 +13,14 @@ import UIKit
 class BaseFetchingViewController : UIViewController, UITableViewDelegate, UITableViewDataSource {
  
     @IBOutlet weak var tableOne : UITableView!
+    var fetchedData : NSArray!
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         //TODO : Implement.
     }
     
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        //TODO : Implement.
-        return 1
-    }
-    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return fetchedData.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
