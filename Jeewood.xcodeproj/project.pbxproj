@@ -24,6 +24,9 @@
 		2441DCDA1D445A2100565081 /* ProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2441DCD81D445A2100565081 /* ProfileTableViewCell.xib */; };
 		2441DCDD1D446E2A00565081 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2441DCDB1D446E2A00565081 /* ItemTableViewCell.swift */; };
 		2441DCDE1D446E2A00565081 /* ItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2441DCDC1D446E2A00565081 /* ItemTableViewCell.xib */; };
+		2441DCE11D44842A00565081 /* SearchResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2441DCDF1D44842900565081 /* SearchResultTableViewCell.swift */; };
+		2441DCE21D44842A00565081 /* SearchResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2441DCE01D44842900565081 /* SearchResultTableViewCell.xib */; };
+		2441DCE61D44969C00565081 /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2441DCE51D44969C00565081 /* ItemViewController.swift */; };
 		A7CA22F91D44257F00AA219A /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CA22F81D44257F00AA219A /* ExploreViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +50,9 @@
 		2441DCD81D445A2100565081 /* ProfileTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileTableViewCell.xib; sourceTree = "<group>"; };
 		2441DCDB1D446E2A00565081 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
 		2441DCDC1D446E2A00565081 /* ItemTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemTableViewCell.xib; sourceTree = "<group>"; };
+		2441DCDF1D44842900565081 /* SearchResultTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultTableViewCell.swift; sourceTree = "<group>"; };
+		2441DCE01D44842900565081 /* SearchResultTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchResultTableViewCell.xib; sourceTree = "<group>"; };
+		2441DCE51D44969C00565081 /* ItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
 		A7CA22F81D44257F00AA219A /* ExploreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,6 +118,7 @@
 				2441DCC41D442F6800565081 /* BrowseViewController.swift */,
 				2441DCC81D443BE000565081 /* LoginViewController.swift */,
 				2441DCCE1D444D9D00565081 /* ProfileViewController.swift */,
+				2441DCE51D44969C00565081 /* ItemViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -123,6 +130,8 @@
 				2441DCD81D445A2100565081 /* ProfileTableViewCell.xib */,
 				2441DCDB1D446E2A00565081 /* ItemTableViewCell.swift */,
 				2441DCDC1D446E2A00565081 /* ItemTableViewCell.xib */,
+				2441DCDF1D44842900565081 /* SearchResultTableViewCell.swift */,
+				2441DCE01D44842900565081 /* SearchResultTableViewCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -185,6 +194,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2441DCE21D44842A00565081 /* SearchResultTableViewCell.xib in Resources */,
 				2441DCAE1D44033200565081 /* LaunchScreen.storyboard in Resources */,
 				2441DCDA1D445A2100565081 /* ProfileTableViewCell.xib in Resources */,
 				2441DCAB1D44033200565081 /* Assets.xcassets in Resources */,
@@ -200,7 +210,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2441DCE11D44842A00565081 /* SearchResultTableViewCell.swift in Sources */,
 				2441DCCA1D443BE000565081 /* LoginViewController.swift in Sources */,
+				2441DCE61D44969C00565081 /* ItemViewController.swift in Sources */,
 				2441DCB61D4404E500565081 /* VANetworking.swift in Sources */,
 				2441DCD01D444D9D00565081 /* ProfileViewController.swift in Sources */,
 				2441DCBE1D441C8E00565081 /* Seller.swift in Sources */,

@@ -10,22 +10,26 @@ import Foundation
 import UIKit
 
 
-class BaseFetchingViewController : UIViewController, UITableViewDelegate, UITableViewDataSource {
+class BaseFetchingViewController : UIViewController {
  
     @IBOutlet weak var tableOne : UITableView!
     var fetchedData : NSArray!
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        //TODO : Implement.
+    func fetchDataWithCompletion(completion: (sucess : Bool, data : NSDictionary) -> Void){
+        
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return fetchedData.count
-    }
-    
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        return UITableViewCell()
-    }
+//    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+//        //TODO : Implement.
+//    }
+//    
+//    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        return fetchedData.count
+//    }
+//    
+//    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+//        return UITableViewCell()
+//    }
 
 
     
