@@ -30,8 +30,8 @@ class CartViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = self.table.dequeueReusableCellWithIdentifier("cell") as! ItemTableViewCell
-        cell.itemName.text = ""
-        cell.itemImage.image = UIImage(named: "..>")
+        cell.itemName.text = "Enigma Sunglass"
+        cell.itemImage.image = UIImage(named: "sunglass-10")
         cell.itemCost.text = "29.95"
         return cell
     }
