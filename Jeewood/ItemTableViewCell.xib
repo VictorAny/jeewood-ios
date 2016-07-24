@@ -54,6 +54,12 @@
                     <constraint firstItem="cq0-c1-qss" firstAttribute="top" secondItem="CXl-S5-Cr2" secondAttribute="top" id="r26-DT-hnw"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="itemCost" destination="CXl-S5-Cr2" id="Vew-fL-q2L"/>
+                <outlet property="itemImage" destination="wST-ve-bxm" id="xDh-Va-SHm"/>
+                <outlet property="itemName" destination="cq0-c1-qss" id="yKM-kY-nbT"/>
+                <outlet property="itemTag" destination="Rts-2B-GqV" id="gLf-n4-UQC"/>
+            </connections>
             <point key="canvasLocation" x="433" y="485.5"/>
         </tableViewCell>
     </objects>

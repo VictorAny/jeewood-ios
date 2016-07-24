@@ -25,7 +25,7 @@ class LoginViewController: UIViewController {
     
     @IBAction func goToMainScreen(sender : AnyObject?){
         //TODO: Move to the next VC.
-        let explorView = ExploreViewController()
+        self.performSegueWithIdentifier("goToTab", sender: self)
         
     }
 

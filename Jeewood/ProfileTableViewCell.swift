@@ -36,11 +36,11 @@ class ProfileTableViewCell: UITableViewCell {
     
     func setFieldsForUser(user: User){
         isUser = true
-        self.userName.text = user.name ?? ""
-        self.userHandle.text = user.handle ?? ""
-        self.userDescription.hidden = true
-        //Very hacky..but maybe thats why it's called a hackathon? --_(*_*)__--
-        self.profileView.image = UIImage(data:NSData(contentsOfURL:NSURL(string: user.pictureUrl!)!)!)
+        self.userName.text = user.name ?? "IAmMe"
+        self.userHandle.text = user.handle ?? "Aliea"
+        self.userDescription.text = "Live life to the fullest, you never know when it may be taken from you."
+//        self.userDescription.hidden = true
+        self.profileView.image = UIImage(named: "stock-pic-2")
     }
     
     func setFieldsForSeller(seller : Seller){
@@ -49,7 +49,8 @@ class ProfileTableViewCell: UITableViewCell {
         self.userName.text = seller.businessName ?? ""
         self.userHandle.text = seller.handle ?? ""
         self.userDescription.hidden = true
-        self.profileView.image = UIImage(data:NSData(contentsOfURL:NSURL(string: seller.logoUrl!)!)!)
+        self.profileView.backgroundColor = UIColor.clearColor()
+        self.profileView.image = UIImage(named: "stock-pic-2")
 
         
         

@@ -13,19 +13,36 @@ class ProfileViewController: BaseFetchingViewController, UITableViewDelegate, UI
     
     @IBOutlet var table : UITableView!
     
+    var API = JeewoodAPI()
     var isSeller : Bool = false
     var user : User?
     var items : [Item]?
     var seller : Seller?
+    
+    var hasFetched = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.table.delegate = self
+        self.table.dataSource = self
+        self.table.rowHeight = 313
+        self.API.getUserInformation("1") { (sucess, data) in
+            if sucess{
+                dispatch_async(dispatch_get_main_queue(), { 
+                    print(data)
+                    let dataDict = data!["data"] as! NSDictionary
+                    let dictArr = dataDict["users"] as! NSArray
+                    self.hasFetched = true
+                    self.user  = User(data: dictArr[0] as! NSDictionary)
+                    self.table.reloadData()
+                })
+            }else{
+                print("Eew, faiured.")
+            }
+        }
         self.table.registerNib(UINib.init(nibName: "ProfileTableViewCell", bundle: NSBundle.mainBundle()), forCellReuseIdentifier: "cell1")
         self.table.registerNib(UINib.init(nibName: "ItemTableViewCell", bundle: NSBundle.mainBundle()), forCellReuseIdentifier: "cell2")
-        
-        //TODO: Get User
 
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -37,11 +54,15 @@ class ProfileViewController: BaseFetchingViewController, UITableViewDelegate, UI
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         if indexPath.section == 0{
             let cell = self.table.dequeueReusableCellWithIdentifier("cell1") as? ProfileTableViewCell
-            if self.isSeller{
-                cell?.setFieldsForUser(self.user!)
+            if !self.isSeller{
+                if self.hasFetched{
+                    cell?.setFieldsForUser(self.user!)
+                }
                 return cell!
             }else{
-                cell?.setFieldsForSeller(self.seller!)
+                if self.hasFetched{
+                    cell?.setFieldsForSeller(self.seller!)
+                }
                 return cell!
             }
         }else{
@@ -61,10 +82,17 @@ class ProfileViewController: BaseFetchingViewController, UITableViewDelegate, UI
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        if self.isSeller{
+            return 2
+        }else{
+            return 1
+        }
     }
     
-  
+    @IBAction func moveToCart(sender: AnyObject){
+        self.performSegueWithIdentifier("goToCart", sender: self)
+    }
+
     
 
 }

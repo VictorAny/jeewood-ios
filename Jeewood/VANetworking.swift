@@ -17,15 +17,22 @@ class VANetworking {
     - parameter url: (String), HTTPMethod(String), jsonBody([String: AnyObject], completionhandler
     - returns: success, error, dictionary optional with json information via callback.
     */
-    func simpleHTTPRequest(toUrl: String, HTTPMethod: String, jsonBody: [String: AnyObject]?, completionHandler: (sucess: Bool, data: NSDictionary?, error: NSError?)->Void){
-        
-        let initialUrl = toUrl
+    func simpleHTTPRequest(HTTPMethod: String, queryString : String?, jsonBody: [String: AnyObject]?, completionHandler: (sucess: Bool, data: NSDictionary?, error: NSError?)->Void){
+//        urlComponents.scheme = "https";
+//        urlComponents.host = "api.nasa.gov";
+//        urlComponents.path = "/planetary/apod";
+       let urlComponent = NSURLComponents()
+        urlComponent.scheme = "http"
+        urlComponent.host = "sheltered-ridge-60236.herokuapp.com"
+        urlComponent.path = "/gateway"
         let session = NSURLSession.sharedSession()
-        let url = NSURL(string: initialUrl)!
+        let qry = NSURLQueryItem(name: "query", value: queryString!)
+        urlComponent.queryItems = [qry]
+        let url = urlComponent.URL!
         let request = NSMutableURLRequest(URL: url)
         request.HTTPMethod = HTTPMethod
-        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-        request.addValue("application/json", forHTTPHeaderField: "Accept")
+        request.addValue("application/graphql", forHTTPHeaderField: "Content-Type")
+        request.addValue("application/graphql", forHTTPHeaderField: "Accept")
         if let HTTPBody = jsonBody{
             do {
                 request.HTTPBody = try NSJSONSerialization.dataWithJSONObject(HTTPBody, options: [])

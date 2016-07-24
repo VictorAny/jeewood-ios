@@ -11,12 +11,14 @@ import UIKit
 class CartViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
     @IBOutlet weak var table : UITableView!
-    var items : [Item]?
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        items = AppDelegate.getAppDelegate().cart
-
+        self.table.registerNib(UINib.init(nibName:"ItemTableViewCell", bundle : NSBundle.mainBundle() ), forCellReuseIdentifier: "cell")
+        self.table.delegate = self
+        self.table.dataSource = self
+        self.table.rowHeight = 330
         // Do any additional setup after loading the view.
     }
 
@@ -24,16 +26,19 @@ class CartViewController: UIViewController, UITableViewDelegate, UITableViewData
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        //TODO : Handle.
-        return UITableViewCell()
+        let cell = self.table.dequeueReusableCellWithIdentifier("cell") as! ItemTableViewCell
+        cell.itemName.text = ""
+        cell.itemImage.image = UIImage(named: "..>")
+        cell.itemCost.text = "29.95"
+        return cell
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return items?.count ?? 0
+        return 1
     }
 
-    
 
 }

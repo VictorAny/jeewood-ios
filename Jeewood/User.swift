@@ -14,10 +14,10 @@ class User {
         return self.data["id"] as? String
     }
     var name : String?{
-        return self.data["name"] as? String
+        return self.data["businessName"] as? String
     }
     var seller : Seller?{
-        if self.data["is_seller"] != nil{
+        if self.data["seller"] != nil{
             return Seller(data: self.data["seller_data"] as! NSDictionary)
         }else{
             return nil

@@ -27,7 +27,11 @@
 		2441DCE11D44842A00565081 /* SearchResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2441DCDF1D44842900565081 /* SearchResultTableViewCell.swift */; };
 		2441DCE21D44842A00565081 /* SearchResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2441DCE01D44842900565081 /* SearchResultTableViewCell.xib */; };
 		2441DCE61D44969C00565081 /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2441DCE51D44969C00565081 /* ItemViewController.swift */; };
-		2441DCE81D44A66600565081 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2441DCE71D44A66600565081 /* CartViewController.swift */; };
+		2441DCEA1D44C6D200565081 /* JeewoodAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2441DCE91D44C6D100565081 /* JeewoodAPI.swift */; };
+		2441DCEC1D44ECF200565081 /* TabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2441DCEB1D44ECF200565081 /* TabController.swift */; };
+		2441DCEF1D44F4B400565081 /* PlacementTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2441DCED1D44F4B400565081 /* PlacementTableViewCell.swift */; };
+		2441DCF01D44F4B400565081 /* PlacementTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2441DCEE1D44F4B400565081 /* PlacementTableViewCell.xib */; };
+		2441DCF21D45119200565081 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2441DCF11D45119200565081 /* CartViewController.swift */; };
 		A7CA22F91D44257F00AA219A /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CA22F81D44257F00AA219A /* ExploreViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,7 +58,11 @@
 		2441DCDF1D44842900565081 /* SearchResultTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultTableViewCell.swift; sourceTree = "<group>"; };
 		2441DCE01D44842900565081 /* SearchResultTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchResultTableViewCell.xib; sourceTree = "<group>"; };
 		2441DCE51D44969C00565081 /* ItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
-		2441DCE71D44A66600565081 /* CartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		2441DCE91D44C6D100565081 /* JeewoodAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JeewoodAPI.swift; sourceTree = "<group>"; };
+		2441DCEB1D44ECF200565081 /* TabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabController.swift; sourceTree = "<group>"; };
+		2441DCED1D44F4B400565081 /* PlacementTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacementTableViewCell.swift; sourceTree = "<group>"; };
+		2441DCEE1D44F4B400565081 /* PlacementTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlacementTableViewCell.xib; sourceTree = "<group>"; };
+		2441DCF11D45119200565081 /* CartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 		A7CA22F81D44257F00AA219A /* ExploreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				2441DCB71D44059600565081 /* AppConstants.swift */,
+				2441DCE91D44C6D100565081 /* JeewoodAPI.swift */,
 				2441DCB51D4404E500565081 /* VANetworking.swift */,
 				2441DCBB1D441B2A00565081 /* Item.swift */,
 				2441DCBD1D441C8E00565081 /* Seller.swift */,
@@ -117,11 +126,12 @@
 			children = (
 				A7CA22F81D44257F00AA219A /* ExploreViewController.swift */,
 				2441DCD31D444EE900565081 /* BaseFetchingViewController.swift */,
+				2441DCEB1D44ECF200565081 /* TabController.swift */,
 				2441DCC41D442F6800565081 /* BrowseViewController.swift */,
 				2441DCC81D443BE000565081 /* LoginViewController.swift */,
 				2441DCCE1D444D9D00565081 /* ProfileViewController.swift */,
-				2441DCE71D44A66600565081 /* CartViewController.swift */,
 				2441DCE51D44969C00565081 /* ItemViewController.swift */,
+				2441DCF11D45119200565081 /* CartViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -130,6 +140,8 @@
 			isa = PBXGroup;
 			children = (
 				2441DCD71D445A2100565081 /* ProfileTableViewCell.swift */,
+				2441DCED1D44F4B400565081 /* PlacementTableViewCell.swift */,
+				2441DCEE1D44F4B400565081 /* PlacementTableViewCell.xib */,
 				2441DCD81D445A2100565081 /* ProfileTableViewCell.xib */,
 				2441DCDB1D446E2A00565081 /* ItemTableViewCell.swift */,
 				2441DCDC1D446E2A00565081 /* ItemTableViewCell.xib */,
@@ -197,6 +209,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2441DCF01D44F4B400565081 /* PlacementTableViewCell.xib in Resources */,
 				2441DCE21D44842A00565081 /* SearchResultTableViewCell.xib in Resources */,
 				2441DCAE1D44033200565081 /* LaunchScreen.storyboard in Resources */,
 				2441DCDA1D445A2100565081 /* ProfileTableViewCell.xib in Resources */,
@@ -220,13 +233,16 @@
 				2441DCD01D444D9D00565081 /* ProfileViewController.swift in Sources */,
 				2441DCBE1D441C8E00565081 /* Seller.swift in Sources */,
 				2441DCA41D44033200565081 /* AppDelegate.swift in Sources */,
+				2441DCEC1D44ECF200565081 /* TabController.swift in Sources */,
 				2441DCBA1D4419B200565081 /* User.swift in Sources */,
+				2441DCF21D45119200565081 /* CartViewController.swift in Sources */,
 				2441DCDD1D446E2A00565081 /* ItemTableViewCell.swift in Sources */,
+				2441DCEF1D44F4B400565081 /* PlacementTableViewCell.swift in Sources */,
 				2441DCBC1D441B2A00565081 /* Item.swift in Sources */,
 				A7CA22F91D44257F00AA219A /* ExploreViewController.swift in Sources */,
 				2441DCD41D444EE900565081 /* BaseFetchingViewController.swift in Sources */,
-				2441DCE81D44A66600565081 /* CartViewController.swift in Sources */,
 				2441DCD91D445A2100565081 /* ProfileTableViewCell.swift in Sources */,
+				2441DCEA1D44C6D200565081 /* JeewoodAPI.swift in Sources */,
 				2441DCC61D442F6800565081 /* BrowseViewController.swift in Sources */,
 				2441DCB81D44059600565081 /* AppConstants.swift in Sources */,
 			);
