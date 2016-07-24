@@ -14,20 +14,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     var navigationController: UINavigationController?
     var tabBarController = UITabBarController()
+    var cart : [Item]?
+    
 
-    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        window?.rootViewController = tabBarController
-        setUpTabBarController()
-        // Override point for customization after application launch.
-        return true
+    
+    class func getAppDelegate() -> AppDelegate {
+        return UIApplication.sharedApplication().delegate as! AppDelegate
     }
     
+    
+//    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+//        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+//        window?.rootViewController = tabBarController
+//        setUpTabBarController()
+//        // Override point for customization after application launch.
+//        return true
+//    }
+    
     private func setUpTabBarController() {
-        let exploreViewController = ExploreViewController()
-        let exploreNavController = UINavigationController(rootViewController: exploreViewController)
-        exploreViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .MostViewed, tag: 0)
-        tabBarController.viewControllers = [exploreNavController]
+//        let exploreViewController = ExploreViewController()
+//        let exploreNavController = UINavigationController(rootViewController: exploreViewController)
+//        exploreViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .MostViewed, tag: 0)
+//        tabBarController.viewControllers = [exploreNavController]
     }
 
     func applicationWillResignActive(application: UIApplication) {

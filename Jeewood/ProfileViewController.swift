@@ -15,11 +15,13 @@ class ProfileViewController: BaseFetchingViewController, UITableViewDelegate, UI
     
     var isSeller : Bool = false
     var user : User?
+    var items : [Item]?
     var seller : Seller?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.table.registerNib(UINib.init(nibName: "ProfileTableViewCell", bundle: NSBundle.mainBundle()), forCellReuseIdentifier: "cell1")
+        self.table.registerNib(UINib.init(nibName: "ItemTableViewCell", bundle: NSBundle.mainBundle()), forCellReuseIdentifier: "cell2")
         
         //TODO: Get User
 
@@ -33,15 +35,30 @@ class ProfileViewController: BaseFetchingViewController, UITableViewDelegate, UI
     
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = self.table.dequeueReusableCellWithIdentifier("cell1") as? ProfileTableViewCell
-        if self.isSeller{
-            cell?.setFieldsForUser(self.user!)
+        if indexPath.section == 0{
+            let cell = self.table.dequeueReusableCellWithIdentifier("cell1") as? ProfileTableViewCell
+            if self.isSeller{
+                cell?.setFieldsForUser(self.user!)
+                return cell!
+            }else{
+                cell?.setFieldsForSeller(self.seller!)
+                return cell!
+            }
         }else{
-            cell?.setFieldsForSeller(self.seller!)
+            let cell = self.table.dequeueReusableCellWithIdentifier("cell2") as? ItemTableViewCell
+            let item = self.items![indexPath.row]
+            cell?.fillCellWithItem(item)
+            return cell!
         }
-        return cell!
     }
     
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        if self.isSeller{
+            return 2
+        }else{
+            return 1
+        }
+    }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 2

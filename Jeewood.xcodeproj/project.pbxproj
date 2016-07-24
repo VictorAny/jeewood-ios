@@ -27,6 +27,7 @@
 		2441DCE11D44842A00565081 /* SearchResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2441DCDF1D44842900565081 /* SearchResultTableViewCell.swift */; };
 		2441DCE21D44842A00565081 /* SearchResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2441DCE01D44842900565081 /* SearchResultTableViewCell.xib */; };
 		2441DCE61D44969C00565081 /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2441DCE51D44969C00565081 /* ItemViewController.swift */; };
+		2441DCE81D44A66600565081 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2441DCE71D44A66600565081 /* CartViewController.swift */; };
 		A7CA22F91D44257F00AA219A /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CA22F81D44257F00AA219A /* ExploreViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +54,7 @@
 		2441DCDF1D44842900565081 /* SearchResultTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultTableViewCell.swift; sourceTree = "<group>"; };
 		2441DCE01D44842900565081 /* SearchResultTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchResultTableViewCell.xib; sourceTree = "<group>"; };
 		2441DCE51D44969C00565081 /* ItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
+		2441DCE71D44A66600565081 /* CartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 		A7CA22F81D44257F00AA219A /* ExploreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -118,6 +120,7 @@
 				2441DCC41D442F6800565081 /* BrowseViewController.swift */,
 				2441DCC81D443BE000565081 /* LoginViewController.swift */,
 				2441DCCE1D444D9D00565081 /* ProfileViewController.swift */,
+				2441DCE71D44A66600565081 /* CartViewController.swift */,
 				2441DCE51D44969C00565081 /* ItemViewController.swift */,
 			);
 			name = ViewControllers;
@@ -222,6 +225,7 @@
 				2441DCBC1D441B2A00565081 /* Item.swift in Sources */,
 				A7CA22F91D44257F00AA219A /* ExploreViewController.swift in Sources */,
 				2441DCD41D444EE900565081 /* BaseFetchingViewController.swift in Sources */,
+				2441DCE81D44A66600565081 /* CartViewController.swift in Sources */,
 				2441DCD91D445A2100565081 /* ProfileTableViewCell.swift in Sources */,
 				2441DCC61D442F6800565081 /* BrowseViewController.swift in Sources */,
 				2441DCB81D44059600565081 /* AppConstants.swift in Sources */,
