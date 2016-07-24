@@ -16,6 +16,14 @@
 		2441DCBA1D4419B200565081 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2441DCB91D4419B200565081 /* User.swift */; };
 		2441DCBC1D441B2A00565081 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2441DCBB1D441B2A00565081 /* Item.swift */; };
 		2441DCBE1D441C8E00565081 /* Seller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2441DCBD1D441C8E00565081 /* Seller.swift */; };
+		2441DCC61D442F6800565081 /* BrowseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2441DCC41D442F6800565081 /* BrowseViewController.swift */; };
+		2441DCCA1D443BE000565081 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2441DCC81D443BE000565081 /* LoginViewController.swift */; };
+		2441DCD01D444D9D00565081 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2441DCCE1D444D9D00565081 /* ProfileViewController.swift */; };
+		2441DCD41D444EE900565081 /* BaseFetchingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2441DCD31D444EE900565081 /* BaseFetchingViewController.swift */; };
+		2441DCD91D445A2100565081 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2441DCD71D445A2100565081 /* ProfileTableViewCell.swift */; };
+		2441DCDA1D445A2100565081 /* ProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2441DCD81D445A2100565081 /* ProfileTableViewCell.xib */; };
+		2441DCDD1D446E2A00565081 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2441DCDB1D446E2A00565081 /* ItemTableViewCell.swift */; };
+		2441DCDE1D446E2A00565081 /* ItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2441DCDC1D446E2A00565081 /* ItemTableViewCell.xib */; };
 		A7CA22F91D44257F00AA219A /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CA22F81D44257F00AA219A /* ExploreViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +39,14 @@
 		2441DCB91D4419B200565081 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		2441DCBB1D441B2A00565081 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		2441DCBD1D441C8E00565081 /* Seller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Seller.swift; sourceTree = "<group>"; };
+		2441DCC41D442F6800565081 /* BrowseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowseViewController.swift; sourceTree = "<group>"; };
+		2441DCC81D443BE000565081 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		2441DCCE1D444D9D00565081 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		2441DCD31D444EE900565081 /* BaseFetchingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseFetchingViewController.swift; sourceTree = "<group>"; };
+		2441DCD71D445A2100565081 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
+		2441DCD81D445A2100565081 /* ProfileTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileTableViewCell.xib; sourceTree = "<group>"; };
+		2441DCDB1D446E2A00565081 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
+		2441DCDC1D446E2A00565081 /* ItemTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemTableViewCell.xib; sourceTree = "<group>"; };
 		A7CA22F81D44257F00AA219A /* ExploreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,9 +80,10 @@
 		2441DCA21D44033200565081 /* Jeewood */ = {
 			isa = PBXGroup;
 			children = (
+				2441DCD21D444DF600565081 /* Views */,
+				2441DCC11D442E5B00565081 /* ViewControllers */,
 				2441DCBF1D44218C00565081 /* Model */,
 				2441DCA31D44033200565081 /* AppDelegate.swift */,
-				A7CA22F81D44257F00AA219A /* ExploreViewController.swift */,
 				2441DCA71D44033200565081 /* Main.storyboard */,
 				2441DCAA1D44033200565081 /* Assets.xcassets */,
 				2441DCAC1D44033200565081 /* LaunchScreen.storyboard */,
@@ -85,6 +102,29 @@
 				2441DCB91D4419B200565081 /* User.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		2441DCC11D442E5B00565081 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A7CA22F81D44257F00AA219A /* ExploreViewController.swift */,
+				2441DCD31D444EE900565081 /* BaseFetchingViewController.swift */,
+				2441DCC41D442F6800565081 /* BrowseViewController.swift */,
+				2441DCC81D443BE000565081 /* LoginViewController.swift */,
+				2441DCCE1D444D9D00565081 /* ProfileViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2441DCD21D444DF600565081 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2441DCD71D445A2100565081 /* ProfileTableViewCell.swift */,
+				2441DCD81D445A2100565081 /* ProfileTableViewCell.xib */,
+				2441DCDB1D446E2A00565081 /* ItemTableViewCell.swift */,
+				2441DCDC1D446E2A00565081 /* ItemTableViewCell.xib */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,7 +186,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2441DCAE1D44033200565081 /* LaunchScreen.storyboard in Resources */,
+				2441DCDA1D445A2100565081 /* ProfileTableViewCell.xib in Resources */,
 				2441DCAB1D44033200565081 /* Assets.xcassets in Resources */,
+				2441DCDE1D446E2A00565081 /* ItemTableViewCell.xib in Resources */,
 				2441DCA91D44033200565081 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -158,12 +200,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2441DCCA1D443BE000565081 /* LoginViewController.swift in Sources */,
 				2441DCB61D4404E500565081 /* VANetworking.swift in Sources */,
+				2441DCD01D444D9D00565081 /* ProfileViewController.swift in Sources */,
 				2441DCBE1D441C8E00565081 /* Seller.swift in Sources */,
 				2441DCA41D44033200565081 /* AppDelegate.swift in Sources */,
 				2441DCBA1D4419B200565081 /* User.swift in Sources */,
+				2441DCDD1D446E2A00565081 /* ItemTableViewCell.swift in Sources */,
 				2441DCBC1D441B2A00565081 /* Item.swift in Sources */,
 				A7CA22F91D44257F00AA219A /* ExploreViewController.swift in Sources */,
+				2441DCD41D444EE900565081 /* BaseFetchingViewController.swift in Sources */,
+				2441DCD91D445A2100565081 /* ProfileTableViewCell.swift in Sources */,
+				2441DCC61D442F6800565081 /* BrowseViewController.swift in Sources */,
 				2441DCB81D44059600565081 /* AppConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

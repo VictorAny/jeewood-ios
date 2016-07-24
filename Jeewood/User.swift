@@ -23,6 +23,11 @@ class User {
             return nil
         }
     }
+    
+    var handle : String?{
+        return self.data["handle"] as? String
+    }
+    
     var pictureUrl : String?{
         return self.data["picture_url"] as? String
     }

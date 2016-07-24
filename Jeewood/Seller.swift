@@ -37,6 +37,10 @@ class Seller {
         return self.data["logo_url"] as? String
     }
     
+    var handle : String?{
+        return self.data["handle"] as? String
+    }
+    
     init(data : NSDictionary){
         self.data = data
     }
